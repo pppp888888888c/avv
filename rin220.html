@@ -90,7 +90,7 @@
             // 2. 验证目标域名是否授权
             if (!isTargetAuthorized(targetUrl)) {
                 loader.style.display = 'none';
-                unauthorizedTip.textContent = '❌ 目标域名未授权，禁止访问';
+                unauthorizedTip.textContent = '❌您不是小醒的顾客请联系小醒添加名单即可使用';
                 unauthorizedTip.style.display = 'block';
                 return;
             }
@@ -117,7 +117,7 @@
             <span></span>
         </div>
     </div>
-    <div id="unauthorizedTip">❌ 未授权访问请联系小醒<br>仅允许授权域名使用</div>
+    <div id="unauthorizedTip">❌ 未授权访问请联系小醒<br>仅授权域名使用</div>
     <div id="errorTip"></div>
     <iframe id="contentFrame"></iframe>
 </body>
